@@ -37,10 +37,10 @@ public class SaleService {
     }
 
     public List<String> bestProductName() {
-        Collection<Sale> sales = saleRepository.getAllSale();
+//        Collection<Sale> sales = saleRepository.getAllSale();
 //        Map<String, Double> revenueByProduct = sales.stream()
 //                .collect(Collectors.groupingBy(Sale::getProductName, ))
-        return new ArrayList<>();
+        return saleRepository.bestProductName();
     }
 
 }

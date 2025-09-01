@@ -37,6 +37,6 @@ public class SaleController {
 
     @GetMapping("/top")
     public ResponseEntity<List<String>> bestProductName() {
-        return ResponseEntity.ok(new ArrayList<>());
+        return ResponseEntity.ok(saleService.bestProductName());
     }
 }
